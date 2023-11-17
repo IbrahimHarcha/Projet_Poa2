@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://15idpxbw8m1t"]
+
+[ext_resource type="PackedScene" uid="uid://c2842iutw4wr" path="res://scene/player.tscn" id="1_8j4yq"]
+[ext_resource type="Resource" uid="uid://c3tkg0d1yj028" path="res://inventory/playerInventory.tres" id="2_wqn0c"]
+[ext_resource type="PackedScene" uid="uid://cymta1bbf87us" path="res://scene/apple.tscn" id="4_epy88"]
+[ext_resource type="PackedScene" uid="uid://bg7evjdnnra08" path="res://scene/stick.tscn" id="5_oqdlr"]
+
+[node name="world" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_8j4yq")]
+position = Vector2(0, -1)
+inventory = ExtResource("2_wqn0c")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+
+[node name="Collectable" type="Node" parent="."]
+
+[node name="stick" parent="." instance=ExtResource("5_oqdlr")]
+position = Vector2(25, 37)
+
+[node name="stick2" parent="." instance=ExtResource("5_oqdlr")]
+position = Vector2(50, 74)
+
+[node name="apple" parent="." instance=ExtResource("4_epy88")]
+position = Vector2(64, 0)
+
+[node name="apple2" parent="." instance=ExtResource("4_epy88")]
+position = Vector2(128, 0)
