@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://15idpxbw8m1t"]
+[gd_scene load_steps=7 format=3 uid="uid://15idpxbw8m1t"]
 
 [ext_resource type="PackedScene" uid="uid://c2842iutw4wr" path="res://scene/player.tscn" id="1_8j4yq"]
 [ext_resource type="Resource" uid="uid://c3tkg0d1yj028" path="res://inventory/playerInventory.tres" id="2_wqn0c"]
+[ext_resource type="PackedScene" uid="uid://caxtmp3es7erk" path="res://scene/player2.tscn" id="3_hr8kb"]
+[ext_resource type="Resource" uid="uid://cebogu53qwjnc" path="res://inventory/playerInventory2.tres" id="4_5vdts"]
 [ext_resource type="PackedScene" uid="uid://cymta1bbf87us" path="res://scene/apple.tscn" id="4_epy88"]
 [ext_resource type="PackedScene" uid="uid://bg7evjdnnra08" path="res://scene/stick.tscn" id="5_oqdlr"]
 
@@ -11,10 +13,12 @@
 position = Vector2(0, -1)
 inventory = ExtResource("2_wqn0c")
 
+[node name="Player2" parent="." instance=ExtResource("3_hr8kb")]
+position = Vector2(104, 59)
+inventory = ExtResource("4_5vdts")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
-
-[node name="Collectable" type="Node" parent="."]
 
 [node name="stick" parent="." instance=ExtResource("5_oqdlr")]
 position = Vector2(25, 37)

@@ -1,2 +1,7 @@
 res://scene/world.tscn
 res://inventory/playerInventory.tres
+res://inventory/InventoryUI.gd
+res://inventory/playerInventory2.tres
+res://scene/player2.tscn
+res://scene/player.tscn
+res://inventory/InventoryUI2.gd
