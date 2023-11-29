@@ -3,3 +3,4 @@ res://inventory/playerInventory.tres
 res://tileset.tres
 res://objets.tres
 res://inventory/playerInventory2.tres
+res://scene/world.gd

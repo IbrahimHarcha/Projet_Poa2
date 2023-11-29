@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://15idpxbw8m1t"]
+[gd_scene load_steps=11 format=3 uid="uid://15idpxbw8m1t"]
 
 [ext_resource type="PackedScene" uid="uid://c2842iutw4wr" path="res://scene/player.tscn" id="1_8j4yq"]
 [ext_resource type="TileSet" uid="uid://b4s4cy2cppc1y" path="res://tileset.tres" id="1_hr5f8"]
+[ext_resource type="Script" path="res://scene/world.gd" id="1_pdkw1"]
 [ext_resource type="TileSet" uid="uid://ctrnwxh8ht0gp" path="res://objets.tres" id="2_6qfxo"]
 [ext_resource type="Resource" uid="uid://c3tkg0d1yj028" path="res://inventory/playerInventory.tres" id="2_wqn0c"]
 [ext_resource type="PackedScene" uid="uid://caxtmp3es7erk" path="res://scene/player2.tscn" id="3_hr8kb"]
@@ -15,6 +16,7 @@ polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Arr
 outlines = Array[PackedVector2Array]([PackedVector2Array(-3, -159, -479, -157, -478, -129, -451, -127, -449, -97, -418, -95, -415, -35, -384, -32, -383, 31, -352, 32, -351, 128, -321, 128, -321, 192, -351, 192, -351, 222, -289, 226, -289, 254, -256, 254, -256, 286, -194, 286, -190, 317, -99, 320, -97, 352, -34, 353, -32, 384, -3, 383, 3, 415, 31, 416, 32, 447, 63, 449, 63, 417, 94, 416, 96, 383, 126, 384, 129, 352, 192, 352, 191, 317, 286, 317, 286, 286, 353, 288, 349, 254, 383, 254, 385, 223, 414, 222, 412, 99, 384, 99, 382, -32, 414, -33, 415, -63, 447, -66, 446, -99, 477, -98, 479, -129, 510, -130, 511, -161, 542, -163, 542, -223, 417, -224, 417, -192, 385, -190, 383, -161, 96, -157, 98, -129, 77, -129, 60, -145, 56, -315, 67, -288, 449, -287, 449, -351, 479, -351, 480, -387, 509, -384, 513, -574, 98, -574, 95, -544, -255, -542, -256, -510, -384, -511, -385, -481, -479, -479, -480, -446, -543, -446, -543, -321, -512, -321, -511, -288, -383, -287, -383, -255, -67, -255, -64, -288, 9, -289, 11, -315, 20, -315, 17, -160)])
 
 [node name="world" type="Node2D"]
+script = ExtResource("1_pdkw1")
 
 [node name="ouater" type="TileMap" parent="."]
 tile_set = ExtResource("1_hr5f8")
