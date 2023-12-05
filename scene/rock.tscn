@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bek0hde5nkdxh"]
+
+[ext_resource type="Texture2D" uid="uid://da27shn0ys0s" path="res://art/environement/Rock Pile.png" id="1_e1yks"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4op5l"]
+radius = 7.0
+
+[node name="rock" type="StaticBody2D"]
+position = Vector2(-1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.999999, 0)
+scale = Vector2(0.0687501, 0.0750001)
+texture = ExtResource("1_e1yks")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_4op5l")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)

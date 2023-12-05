@@ -1,6 +1,13 @@
-res://scene/world.tscn
+res://scene/rock.tscn
 res://inventory/playerInventory.tres
 res://tileset.tres
 res://objets.tres
 res://inventory/playerInventory2.tres
+res://scene/world.tscn
 res://scene/world.gd
+res://scene/player.tscn
+res://scene/apple.tscn
+res://scene/stick.tscn
+res://script/Player2.gd
+res://scene/player2.tscn
+res://inventory/inventory_ui.tscn
