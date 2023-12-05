@@ -30,8 +30,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_bh17j"]
 radius = 5.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("navigation_agent")]
 script = ExtResource("1_xvpdp")
+navigation_agent = NodePath("NavigationAgent2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sko5h")
@@ -51,3 +52,6 @@ offset_right = 34.0
 offset_bottom = -17.0
 grow_horizontal = 2
 script = ExtResource("4_w61jr")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true

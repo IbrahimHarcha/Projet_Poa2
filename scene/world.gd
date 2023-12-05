@@ -2,7 +2,7 @@ extends Node2D
 
 # Array of the object scenes (PackedScene) to spawn
 var objects_to_spawn = [preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn")]
-
+var obj_pos=[]
 
 # Predefined positions
 # var positions = [[-1, -19], [3, -14], [-3, -11], [3, -9], [7, -10], [7, -7], [2, -5], [-3, -5], [6, 5], [6, 14]]
@@ -19,7 +19,8 @@ func spawn_objects():
 	for i in range(min(objects_to_spawn.size(), positions.size())):
 		var object_scene = objects_to_spawn[i]
 		var object_instance = object_scene.instantiate()
-
+		var vequdeux = Vector2(positions[i][0], positions[i][1])
+		obj_pos.append([objects_to_spawn[i],vequdeux])
 		
 		object_instance.global_position = Vector2(positions[i][0], positions[i][1])
 
