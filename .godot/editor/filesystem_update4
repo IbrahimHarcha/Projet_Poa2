@@ -1,11 +1,11 @@
-res://scene/player2.tscn
+res://inventory/inventory_ui.tscn
 res://inventory/playerInventory.tres
 res://tileset.tres
 res://objets.tres
 res://inventory/playerInventory2.tres
+res://inventory/InventoryUI.gd
 res://scene/world.tscn
 res://scene/player.tscn
-res://inventory/inventory_ui.tscn
-res://script/Player2.gd
-res://scene/world.gd
-res://scene/player2.gd
+res://scene/player2.tscn
+res://scene/stick.tscn
+res://scene/rock.tscn

@@ -10,7 +10,7 @@ var obj_pos = []
 @export var inventory : Inventory
 
 func _ready():
-	var node_a = get_node(".")
+	var node_a = get_tree().current_scene
 	obj_pos = node_a.obj_pos
 	navigation_agent.path_desired_distance = 15
 	navigation_agent.target_desired_distance = 15
@@ -18,6 +18,7 @@ func _ready():
 	
 func actor_setup():
 	await get_tree().physics_frame
+	print(obj_pos)
 	print(obj_pos[1][1])
 	navigation_agent.target_position=obj_pos[1][1]
 	print(navigation_agent.target_position)
