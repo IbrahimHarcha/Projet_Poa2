@@ -4,6 +4,7 @@ class_name Inventory
 
 signal update
 
+
 @export var slots : Array[InventorySlot]
 
 func insert(item : InventoryItem) : 
@@ -16,6 +17,12 @@ func insert(item : InventoryItem) :
 			emptySlots[0].item = item
 			emptySlots[0].amount = 1
 			
+	update.emit()
+	
+func dropAll() : 
+	for slot in slots:
+		slot.item = null
+		slot.amount = 0
 	update.emit()
 	
 

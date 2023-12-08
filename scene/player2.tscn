@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://caxtmp3es7erk"]
 
-[ext_resource type="Script" path="res://script/Player2.gd" id="1_xvpdp"]
+[ext_resource type="Script" path="res://scene/player2.gd" id="1_o4fav"]
 [ext_resource type="Texture2D" uid="uid://msg4ad63xoak" path="res://art/character/survivalgame-player-green.png" id="2_ygn3c"]
 [ext_resource type="PackedScene" uid="uid://dl8unl5yxl30b" path="res://inventory/inventory_ui.tscn" id="3_lxhij"]
 [ext_resource type="Script" path="res://inventory/InventoryUI2.gd" id="4_w61jr"]
@@ -28,10 +28,11 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bh17j"]
-radius = 5.0
+radius = 7.07107
 
-[node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_xvpdp")
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("navigation_agent")]
+script = ExtResource("1_o4fav")
+navigation_agent = NodePath("NavigationAgent2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sko5h")
@@ -51,3 +52,6 @@ offset_right = 34.0
 offset_bottom = -17.0
 grow_horizontal = 2
 script = ExtResource("4_w61jr")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true

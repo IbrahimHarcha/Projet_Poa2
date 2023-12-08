@@ -12,3 +12,4 @@ func update(slot : InventorySlot) :
 		item_visual.texture = slot.item.texture
 		amount_text.visible = true
 		amount_text.text = str(slot.amount)
+		
