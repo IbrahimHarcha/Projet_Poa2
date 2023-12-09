@@ -14,7 +14,7 @@ script = ExtResource("1_t8us0")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_right = 70.0
+offset_right = 30.0
 offset_bottom = 25.0
 texture = ExtResource("2_ll635")
 patch_margin_left = 6
@@ -29,19 +29,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -28.0
+offset_left = -8.0
 offset_top = -8.5
-offset_right = 28.0
+offset_right = 9.0
 offset_bottom = 8.5
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
 
-[node name="InventoryUISlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ja8cc")]
-layout_mode = 2
-
 [node name="InventoryUISlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ja8cc")]
-layout_mode = 2
-
-[node name="InventoryUISlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_ja8cc")]
 layout_mode = 2
