@@ -15,9 +15,14 @@ func _ready():
 func shuffle_positions():
 	positions.shuffle()
 	
-#func _process(delta):
+#func _process(delta):0
 #	if $Player2.isatApple()or$Player3.isatApple()or$Player4.isatApple()or$Player5.isatApple():
+#		_animated_sprite.visible=true
 #		_animated_sprite.play("end")
+#		if _animated_sprite.position.y>150:
+#			_animated_sprite.position.y=-1
+
+		
 func spawn_objects():
 	for i in range(min(objects_to_spawn.size(), positions.size())):
 		var object_scene = objects_to_spawn[i]

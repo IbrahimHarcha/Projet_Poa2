@@ -7,6 +7,7 @@ const direction =Vector2(1,0)
 
 
 func slide():
+	_animated_sprite.visible=true
 	velocity = direction * SPEED
 	move_and_slide()
 	

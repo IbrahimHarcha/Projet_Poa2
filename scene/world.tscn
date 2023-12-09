@@ -1,24 +1,113 @@
-[gd_scene load_steps=44 format=3 uid="uid://15idpxbw8m1t"]
+[gd_scene load_steps=66 format=3 uid="uid://15idpxbw8m1t"]
 
 [ext_resource type="TileSet" uid="uid://b4s4cy2cppc1y" path="res://tileset.tres" id="1_hr5f8"]
 [ext_resource type="Script" path="res://scene/world.gd" id="1_pdkw1"]
 [ext_resource type="TileSet" uid="uid://ctrnwxh8ht0gp" path="res://objets.tres" id="2_6qfxo"]
+[ext_resource type="Script" path="res://scene/text.gd" id="2_clrys"]
 [ext_resource type="Script" path="res://scene/boat.gd" id="2_vgpp4"]
+[ext_resource type="Texture2D" uid="uid://dk2yvdg48sojx" path="res://art/Success-0/Success-0.png" id="2_w3lkg"]
+[ext_resource type="Texture2D" uid="uid://ico3g4k8f0h6" path="res://art/Success-0/Success-1.png" id="3_0lyx6"]
 [ext_resource type="PackedScene" uid="uid://caxtmp3es7erk" path="res://scene/player2.tscn" id="3_hr8kb"]
 [ext_resource type="Script" path="res://scene/pont.gd" id="3_lbvav"]
 [ext_resource type="Script" path="res://scene/blackboard_2.gd" id="4_1w4wu"]
 [ext_resource type="Script" path="res://scene/blackboard_1.gd" id="4_2lsit"]
+[ext_resource type="Texture2D" uid="uid://c76u72e0n6a0t" path="res://art/Success-0/Success-2.png" id="4_nfg10"]
+[ext_resource type="Texture2D" uid="uid://pq1ulyedefq5" path="res://art/Success-0/Success-3.png" id="5_e0vm1"]
 [ext_resource type="Texture2D" uid="uid://bf0jk70dj3wcc" path="res://art/character/animation_chat/kitty_vert.png" id="6_ste8h"]
+[ext_resource type="Texture2D" uid="uid://ebskk8xbp8hg" path="res://art/Success-0/Success-4.png" id="6_xcmkx"]
+[ext_resource type="Texture2D" uid="uid://bwlylfoavgy0n" path="res://art/Success-0/Success-5.png" id="7_23kia"]
 [ext_resource type="PackedScene" uid="uid://dnqkdf85cgpet" path="res://scene/player5.tscn" id="7_a8m25"]
+[ext_resource type="Texture2D" uid="uid://dw7nalam1eae5" path="res://art/Success-0/Success-6.png" id="8_4ra3d"]
 [ext_resource type="PackedScene" uid="uid://0bsm6otgnl4y" path="res://scene/player4.tscn" id="8_eks6j"]
 [ext_resource type="Texture2D" uid="uid://bw41r6s1k0hn0" path="res://art/character/animation_chat/kitty_violet.png" id="8_ux4ab"]
 [ext_resource type="Resource" uid="uid://dn1d484mns5wd" path="res://inventory/playerInventory5.tres" id="9_4ogxr"]
+[ext_resource type="Texture2D" uid="uid://s248e6uwoyxy" path="res://art/Success-0/Success-7.png" id="9_p2spr"]
+[ext_resource type="Texture2D" uid="uid://bf0bx53shunhm" path="res://art/Success-0/Success-8.png" id="10_es5gx"]
 [ext_resource type="Resource" uid="uid://bd4dotcct0rb5" path="res://inventory/playerInventory4.tres" id="10_rrglu"]
 [ext_resource type="Resource" uid="uid://cy00v48rhq18s" path="res://inventory/playerInventory3.tres" id="11_24rnb"]
+[ext_resource type="Texture2D" uid="uid://c64kexk2o77ru" path="res://art/Success-0/Success-9.png" id="11_r2fno"]
 [ext_resource type="PackedScene" uid="uid://bslix5oo2tmn4" path="res://scene/player3.tscn" id="11_y71xf"]
 [ext_resource type="Resource" uid="uid://cebogu53qwjnc" path="res://inventory/playerInventory2.tres" id="12_7i7pt"]
+[ext_resource type="Texture2D" uid="uid://dh5ufue44oebb" path="res://art/Success-0/Success-10.png" id="12_4015p"]
+[ext_resource type="Texture2D" uid="uid://dj3sd6u1s5q5e" path="res://art/Success-0/Success-11.png" id="13_l716i"]
+[ext_resource type="Texture2D" uid="uid://dp8fevnluo5ui" path="res://art/Success-0/Success-12.png" id="14_7d8la"]
+[ext_resource type="Texture2D" uid="uid://daebx8kicl7ke" path="res://art/Success-0/Success-13.png" id="15_lq7ho"]
+[ext_resource type="Texture2D" uid="uid://cxlikqkt20g7v" path="res://art/Success-0/Success-14.png" id="16_gwcwk"]
 [ext_resource type="PackedScene" uid="uid://cymta1bbf87us" path="res://scene/apple.tscn" id="16_w2oh5"]
+[ext_resource type="Texture2D" uid="uid://b2ngt280vifuv" path="res://art/Success-0/Success-15.png" id="17_w4oyb"]
 [ext_resource type="Texture2D" uid="uid://5vhaohpyynv7" path="res://art/floss-idle-with-sail-blue.png" id="18_fydgx"]
+[ext_resource type="Texture2D" uid="uid://bwwlik1apmv1r" path="res://art/Success-0/Success-16.png" id="18_jex7e"]
+[ext_resource type="Texture2D" uid="uid://bboulc0nurnh" path="res://art/Success-0/Success-17.png" id="19_ji6kr"]
+[ext_resource type="Texture2D" uid="uid://b61fiyiru20qa" path="res://art/Success-0/Success-18.png" id="20_cv0s5"]
+[ext_resource type="Texture2D" uid="uid://bvxk3h4b0hub5" path="res://art/Success-0/Success-19.png" id="21_kf34s"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7bfxp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_w3lkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0lyx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nfg10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_e0vm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xcmkx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_23kia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4ra3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_p2spr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_es5gx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_r2fno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4015p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_l716i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7d8la")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_lq7ho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gwcwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_w4oyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jex7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ji6kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_cv0s5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_kf34s")
+}],
+"loop": true,
+"name": &"end",
+"speed": 5.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tf3cc"]
 atlas = ExtResource("18_fydgx")
@@ -197,12 +286,25 @@ animations = [{
 [node name="world" type="Node2D"]
 script = ExtResource("1_pdkw1")
 
+[node name="text" type="CharacterBody2D" parent="."]
+position = Vector2(33, 600)
+scale = Vector2(2, 2)
+script = ExtResource("2_clrys")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="text"]
+visible = false
+z_index = 11
+sprite_frames = SubResource("SpriteFrames_7bfxp")
+animation = &"end"
+
 [node name="boat" type="CharacterBody2D" parent="."]
 position = Vector2(-1000, 116)
 script = ExtResource("2_vgpp4")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="boat"]
+visible = false
 z_index = 10
 position = Vector2(-6, -229)
 scale = Vector2(3, 3)
@@ -237,6 +339,7 @@ layer_0/z_index = 1
 layer_0/tile_data = PackedInt32Array(-458747, 262145, 0, -786439, 262145, 0, -786445, 196609, 3, -720909, 196609, 4, -786444, 262145, 3, -720908, 262145, 4, 393224, 196609, 3, 458760, 196609, 4, 393225, 262145, 3, 458761, 262145, 4, 524281, 196609, 7, 524282, 262145, 7, 524283, 327681, 7, 196610, 327681, 4, 262140, 327681, 4, -196606, 327681, 4, 131077, 327681, 4, -6, 327681, 4, -131076, 1, 0, -65540, 1, 1, -4, 1, 2, -131075, 65537, 0, -65539, 65537, 1, -3, 65537, 2, -131074, 131073, 0, -65538, 131073, 1, -2, 131073, 2, -131068, 1, 0, -65532, 1, 1, 4, 1, 2, -131067, 65537, 0, -65531, 65537, 1, 5, 65537, 2, -131066, 131073, 0, -65530, 131073, 1, 6, 131073, 2, 262142, 1, 0, 327678, 1, 1, 393214, 1, 2, 262143, 65537, 0, 327679, 65537, 1, 393215, 65537, 2, 196608, 131073, 0, 262144, 131073, 1, 327680, 131073, 2, -1179642, 1, 0, -1114106, 1, 1, -1048570, 1, 2, -1179641, 65537, 0, -1114105, 65537, 1, -1048569, 65537, 2, -1179640, 131073, 0, -1114104, 131073, 1, -1048568, 131073, 2, -983043, 1, 0, -917507, 1, 1, -851971, 1, 2, -983042, 65537, 0, -917506, 65537, 1, -851970, 65537, 2, -983041, 131073, 0, -917505, 131073, 1, -851969, 131073, 2, 393232, 327681, 6, 393233, 393217, 6, 393234, 458753, 6, 262122, 327681, 6, 262123, 393217, 6, 262124, 458753, 6, -589844, 327681, 6, -589843, 393217, 6, -589842, 458753, 6, -851963, 196609, 0, 196602, 196609, 0, -262153, 196609, 0, 524293, 1, 5, 327670, 1, 5, -1048562, 1, 5, -851982, 1, 5, 655360, 65537, 5, -393202, 65537, 5, -262149, 131073, 5, -655367, 131073, 5)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+visible = false
 navigation_polygon = SubResource("NavigationPolygon_udnxs")
 
 [node name="blackboard_2" type="Node2D" parent="."]

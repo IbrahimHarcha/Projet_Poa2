@@ -14,7 +14,6 @@ var pomme_pos=Vector2 (15,-365)
 @export var inventory : Inventory
 @export var boss: Node2D
 @onready var _animated_sprite = $AnimatedSprite2D
-
 func _ready():
 	var node_a = get_tree().current_scene
 	obj_pos = node_a.obj_pos
@@ -45,9 +44,7 @@ func _physics_process(delta):
 		_animated_sprite.play("run_right")
 	else:
 		_animated_sprite.play("run_left")
-	if navigation_agent.is_target_reached() and navigation_agent.target_position==pomme_pos:
-		#print(self.get_name() )
-		atApple=true
+	if navigation_agent.is_navigation_finished() and navigation_agent.target_position== pomme_pos:
 		return
 	if navigation_agent.is_navigation_finished() and navigation_agent.target_position==boss.position :
 		inventory.dropAll()
@@ -73,9 +70,9 @@ func player() :
 func is_collecting()->bool:
 	return collecte
 
-
 func isatApple()->bool:
 	return atApple
+
 
 func collect(item) : 
 	# si l'inventaire a encore une case vide alors on met l'objet dedans
