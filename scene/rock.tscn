@@ -3,7 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://da27shn0ys0s" path="res://art/environement/Rock Pile.png" id="1_e1yks"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4op5l"]
+<<<<<<< Updated upstream
 radius = 7.0
+=======
+radius = 11.0454
+>>>>>>> Stashed changes
 
 [node name="rock" type="StaticBody2D"]
 position = Vector2(-1, 0)
@@ -17,6 +21,10 @@ texture = ExtResource("1_e1yks")
 position = Vector2(0, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< Updated upstream
 position = Vector2(2, 2)
+=======
+position = Vector2(1, 1)
+>>>>>>> Stashed changes
 shape = SubResource("CircleShape2D_4op5l")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)

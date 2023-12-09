@@ -1,8 +1,8 @@
 extends Node2D
 
 # Array of the object scenes (PackedScene) to spawn
-var objects_to_spawn = [preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn")]
-var obj_pos=[]
+var objects_to_spawn = [preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/stick.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn"),preload("res://scene/rock.tscn")]
+var obj_pos=[["apple",Vector2(36,-356)],["apple",Vector2(36,-356)],["apple",Vector2(36,-356)],["apple",Vector2(36,-356)]]
 
 # Predefined positions
 # var positions = [[-1, -19], [3, -14], [-3, -11], [3, -9], [7, -10], [7, -7], [2, -5], [-3, -5], [6, 5], [6, 14]]

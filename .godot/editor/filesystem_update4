@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://scene/player2.tscn
 res://inventory/playerInventory.tres
 res://tileset.tres
@@ -9,3 +10,32 @@ res://inventory/inventory_ui.tscn
 res://script/Player2.gd
 res://scene/world.gd
 res://scene/player2.gd
+=======
+res://scene/world.tscn
+res://inventory/Inventory.gd
+res://inventory/InventoryUI2.gd
+res://inventory/playerInventory2.tres
+res://inventory/InventoryUI3.gd
+res://inventory/playerInventory3.tres
+res://inventory/InventoryUI4.gd
+res://inventory/playerInventory4.tres
+res://inventory/InventoryUI5.gd
+res://inventory/playerInventory5.tres
+res://inventory/InventoryUI.gd
+res://inventory/playerInventory.tres
+res://scene/blackboard_1.gd
+res://scene/player2.gd
+res://inventory/Item/stick.tres
+res://inventory/Item/rock.tres
+res://tileset.tres
+res://objets.tres
+res://scene/player2.tscn
+res://scene/rock.tscn
+res://inventory/inventory_ui.tscn
+res://scene/pont.gd
+res://scene/blackboard_2.gd
+res://scene/world.gd
+res://scene/player3.gd
+res://script/Collectable.gd
+res://scene/apple.tscn
+>>>>>>> Stashed changes

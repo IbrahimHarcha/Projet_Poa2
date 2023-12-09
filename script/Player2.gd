@@ -12,6 +12,7 @@ var obj_pos = []
 func _ready():
 	var node_a = get_node(".")
 	obj_pos = node_a.obj_pos
+<<<<<<< Updated upstream:script/Player2.gd
 	navigation_agent.path_desired_distance = 15
 	navigation_agent.target_desired_distance = 15
 	call_deferred("actor_setup")
@@ -22,6 +23,36 @@ func actor_setup():
 	navigation_agent.target_position=obj_pos[1][1]
 	print(navigation_agent.target_position)
 func _physics_process(delta):
+=======
+	boss=get_parent().get_node("blackboard_2")
+	navigation_agent.path_desired_distance = 10
+	navigation_agent.target_desired_distance = 10
+	#call_deferred("actor_setup","stick")
+
+func fin():
+	navigation_agent.target_position=Vector2 (36,-356)
+func actor_setup(obj):
+	collecte=true
+	await get_tree().physics_frame
+	var j=1000000
+	var distanceuh =  Vector2(1000000,100000)
+	for i  in range (obj_pos.size()):
+		if obj_pos[i][0] == obj:
+			if  obj_pos[i][1].distance_to(global_position) < global_position.distance_to(distanceuh):
+				j=i
+				distanceuh = obj_pos[i][1]
+	if j<obj_pos.size():
+		obj_pos.pop_at(j)
+	navigation_agent.target_position=distanceuh
+func _physics_process(delta):
+	if navigation_agent.is_navigation_finished() and navigation_agent.target_position== Vector2 (36,-356):
+		return
+	if navigation_agent.is_navigation_finished() and navigation_agent.target_position==boss.position :
+		inventory.dropAll()
+		collecte = false
+		boss.object_apporte()
+		return
+>>>>>>> Stashed changes:scene/player3.gd
 	if navigation_agent.is_navigation_finished():
 		return
 	var current_agent_position: Vector2 = global_position
@@ -62,8 +93,8 @@ func get_closest_item():
 #		var velocity = direction*speed
 #		move_and_slide()
 
-
 func collect(item) : 
 	# si l'inventaire a encore une case vide alors on met l'objet dedans
 	#if(inventory.items.has(null)): 
-	inventory.insert(item)
+	if global_position.distance_to(navigation_agent.target_position) < 30:
+		inventory.insert(item)

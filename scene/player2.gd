@@ -23,6 +23,16 @@ func actor_setup():
 	navigation_agent.target_position=obj_pos[1][1]
 	print(navigation_agent.target_position)
 func _physics_process(delta):
+<<<<<<< Updated upstream
+=======
+	if navigation_agent.is_navigation_finished() and navigation_agent.target_position== Vector2 (36,-356):
+		return
+	if navigation_agent.is_navigation_finished() and navigation_agent.target_position==boss.position :
+		inventory.dropAll()
+		collecte = false
+		boss.object_apporte()
+		return
+>>>>>>> Stashed changes
 	if navigation_agent.is_navigation_finished():
 		return
 	var current_agent_position: Vector2 = global_position
@@ -44,27 +54,23 @@ func player() :
 	pass
 
 
+<<<<<<< Updated upstream
 func get_closest_item():
 	var items = get_tree().get_nodes_in_group(seekable_group)
 	var min_distance = INF
 	var closest_item = null
+=======
+func is_collecting()->bool:
 
-	for item in items:
-		var distance = global_position.distance_to(item.global_position)
-		if distance < min_distance:
-			min_distance = distance
-			closest_item = item
+	return collecte
 
-	return closest_item
+>>>>>>> Stashed changes
 
-#func move_towards_target(delta):
-#		var next_position = navigation_agent.get_next_location()
-#		var direction = (next_position - global_position).normalized()
-#		var velocity = direction*speed
-#		move_and_slide()
+
 
 
 func collect(item) : 
 	# si l'inventaire a encore une case vide alors on met l'objet dedans
 	#if(inventory.items.has(null)): 
-	inventory.insert(item)
+	if global_position.distance_to(navigation_agent.target_position) < 20:
+		inventory.insert(item)

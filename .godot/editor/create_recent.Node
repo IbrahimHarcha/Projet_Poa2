@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
+=======
+AnimatedSprite2D
+Node2D
+Sprite2D
+TileMap
+>>>>>>> Stashed changes
 NavigationAgent2D
 CollisionShape2D
-AnimatedSprite2D
 CharacterBody2D
 Area2D
 Sprite2D
